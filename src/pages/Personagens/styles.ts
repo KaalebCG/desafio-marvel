@@ -23,6 +23,29 @@ export const CardList = styled.div`
 const urlImg = (props: ThumbnailData) =>
   `${props.thumbnail.path}.${props.thumbnail.extension}`;
 
+export const Busca = styled.div`
+  font-family: "Marvel", sans-serif;
+  background: #f1f1f1;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  transition: all 0.4s;
+
+  input {
+    height: 40px;
+  }
+
+  button {
+    height: 40px;
+    width: 50px;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background: #ec1d24;
+    color: white;
+    cursor: pointer;
+  }
+`;
+
 export const Card = styled.div`
   background: #f1f1f1;
   height: 450px;

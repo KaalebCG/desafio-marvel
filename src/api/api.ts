@@ -9,14 +9,13 @@ const ts = Number(new Date());
 
 const hash = md5(ts + privateKey + publicKey);
 
-
 const api = axios.create({
-  baseURL:"http://gateway.marvel.com/v1/public/",
-  params:{
+  baseURL: "http://gateway.marvel.com/v1/public/",
+  params: {
     ts,
-    apikey:publicKey,
+    apikey: publicKey,
     hash,
-  }
-})
+  },
+});
 
-export default api
+export default api;
